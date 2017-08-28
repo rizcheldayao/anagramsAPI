@@ -27,9 +27,9 @@ function onClick() {
       e.preventDefault();
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
           document.getElementById('response').innerHTML = this.responseText;
-        } else if (this.readyState == 4 && this.status == 204) {
+        } else if (this.readyState === 4 && this.status === 204) {
           document.getElementById('response').innerHTML = 'HTTP/1.1 204 No Content';
         } else {
           document.getElementById('response').innerHTML = this.responseText;
