@@ -10,6 +10,8 @@ To build the project, run `npm run build` and to build the css run `npm run buil
 
 To run the project, run `npm run start`
 
+Enter `http://localhost:3000` in the browser
+
 ## Implementation details
 - Data store: mongodb
 - Tech stack used: MongoDB, Express, ES6, Mongoose, HTML, Sass
