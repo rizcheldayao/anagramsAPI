@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Anagrams API</title>
+  <link href="css" rel="stylesheet" type="text/css" />
+  <script src="js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">Anagrams</h1>
+    <div class="container">
+      <form id="form" action="/words.json" method="POST">
+        <div class="section">
+        <input type="text" class="input" id="input" name="entry" placeholder="Enter word..." />
+        <p>*Note: To add words, please follow the following format: '{ words: ["read", "dear", "dare"] }'.
+          For other queries, enter single word to delete or fetch anagrams.
+        </p>
+        </div>
+        <input type="number" class="limit" id="limit" name="limit" placeholder="Enter limit..." />
+        <select class="select" id="select">
+          <option value="addWord">Add</option>
+          <option value="fetchAnagram">Fetch</option>
+          <option value="deleteWord">Delete</option>
+          <option value="deleteAll">Delete All</option>
+        </select>
+        <button type="submit" class="button" id="button" form="form" value="Submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <p id="response"></p>
+</body>
+
+</html>

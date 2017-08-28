@@ -1,0 +1,26 @@
+{
+  "name": "anagramsapi",
+  "version": "1.0.0",
+  "description": "Restful CRUD API for anagrams and words",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "nodemon src/server.js",
+    "build-css": "node-sass --include-path scss src/styles/scss/styles.scss src/styles/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rizchel Dayao",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.8"
+  }
+}
